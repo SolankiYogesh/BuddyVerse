@@ -1,0 +1,20 @@
+{
+  "autoInit": true,
+  "pushNotifications": {
+    "android": {
+      "titleColor": null,
+      "messageColor": null,
+      "channelName": "greenLync_notification",
+      "icon": "ic_launcher",
+      "backgroundImage": null,
+      "channelDescription": "For Messages",
+      "largeIcon": null,
+      "priority": "urgent"
+    },
+    "autoRegister": true,
+    "customListener": true,
+    "foreground": true
+  },
+  "disableFacebookReferralCheck": false,
+  "uiConfig": null
+}

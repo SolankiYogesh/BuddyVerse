@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.003222712">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: Switch to android setup_variables lane" time="0.000355515">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: Switch to android build_apk lane" time="0.000218704">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: Switch to android download_dependencies lane" time="0.000209198">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: androidDependencies" time="43.351419678">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: Switch to android fetch_build_number lane" time="0.000477498">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: cat build_number.txt" time="0.002658763">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: android_set_version_code" time="0.002349827">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="8: bundleRelease" time="145.591556305">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="9: upload_to_play_store" time="32.318920597">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

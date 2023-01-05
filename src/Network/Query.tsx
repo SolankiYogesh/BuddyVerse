@@ -1,0 +1,541 @@
+const getDoctorData = `query MyQuery($latitude: Float!, $longitude: Float!, $range: Int!) {
+  getDoctorData(latitude: $latitude, longitude: $longitude, range: $range) {
+    shopid
+    MMC
+    MMC_digital
+    MMC_physical
+    address
+    city
+    consulting_office_videocall_fees
+    consulting_office_visit_fees
+    doctor_type
+    email
+    facebook
+    fee_initial_consultation
+    friday
+    image_name
+    image
+    in_person
+    instagram
+    insurance
+    latitude
+    license_number
+    license_type
+    license_state
+    longitude
+    military_veteran_discount
+    name
+    monday
+    payment_android_pay
+    payment_credit_debit
+    payment_applepay
+    payment_paypal
+    payment_venmo
+    phone_number
+    postal_code
+    ranking
+    rating
+    reviews_count
+    saturday
+    speciality
+    state
+    sunday
+    telehealth
+    year_in_practice
+    wm_doctors_id
+    wednesday
+    website
+    url
+    twitter
+    tuesday
+    timezone
+    thursday
+  }
+}
+`;
+
+const getDispensary = `query MyQuery ($latitude: Float!, $longitude: Float!, $range: Int!){
+  getAllData(latitude: $latitude, longitude: $longitude, range: $range) {
+    shopid
+    longitude
+    latitude
+    address
+    best_of_weedmaps
+    city
+    delivery_fees
+    delivery_minimum_order
+    description
+    dispensary_hash
+    email
+    friday
+    has_pickup
+    has_testing
+    id
+    image
+    image_name
+    intro_body
+    is_delivery
+    is_recreational
+    is_storefront
+    license_number
+    license_state
+    license_type
+    likes
+    monday
+    name
+    phone_number
+    postal_code
+    ranking
+    wmid
+    wednesday
+    website
+    url
+    tuesday
+    thursday
+    text
+    sunday
+    state
+    saturday
+    review_count
+    region
+    rating
+  }
+}
+`;
+
+const getDiliveries = `query MyQuery ($latitude: Float!, $longitude: Float!, $range: Int!) {
+  getAllDelivery(latitude: $latitude, longitude: $longitude, range: $range) {
+    address
+    city
+    is_delivery
+    best_of_weedmaps
+    delivery_fees
+    delivery_minimum_order
+    description
+    dispensary_hash
+    email
+    friday
+    has_pickup
+    has_testing
+    id
+    image
+    image_name
+    intro_body
+    is_recreational
+    is_storefront
+    latitude
+    license_number
+    license_state
+    license_type
+    longitude
+    likes
+    monday
+    name
+    phone_number
+    shopid
+    saturday
+    review_count
+    region
+    rating
+    ranking
+    postal_code
+    state
+    wmid
+    wednesday
+    website
+    url
+    tuesday
+    thursday
+    sunday
+    text
+  }
+}
+`;
+
+const getDoctorSearch = `query MyQuery($latitude:Float!,$longitude:Float!,$range:Int!,$search:String!) {
+  getDoctorSearch(latitude: $latitude, longitude: $longitude, range:$range,search:$search) {
+    shopid
+    MMC
+    MMC_digital
+    MMC_physical
+    address
+    city
+     likes
+    consulting_office_videocall_fees
+    consulting_office_visit_fees
+    doctor_type
+    email
+    facebook
+    fee_initial_consultation
+    friday
+    image_name
+    image
+    in_person
+    instagram
+    insurance
+    latitude
+    license_number
+    license_type
+    license_state
+    longitude
+    military_veteran_discount
+    name
+    monday
+    payment_android_pay
+    payment_credit_debit
+    payment_applepay
+    payment_paypal
+    payment_venmo
+    phone_number
+    postal_code
+    ranking
+    rating
+    reviews_count
+    saturday
+    speciality
+    state
+    sunday
+    telehealth
+    year_in_practice
+    wm_doctors_id
+    wednesday
+    website
+    url
+    twitter
+    tuesday
+    timezone
+    thursday
+  }
+}
+`;
+
+const getDeliverySearch = `query MyQuery ($latitude:Float!,$longitude:Float!,$range:Int!,$search:String!) {
+  getDeliverySearch(latitude: $latitude, longitude: $longitude, range: $range,search:$search) {
+    address
+    city
+    is_delivery
+    best_of_weedmaps
+    delivery_fees
+    delivery_minimum_order
+    description
+    dispensary_hash
+    email
+    friday
+    has_pickup
+    has_testing
+    id
+    image
+    image_name
+    intro_body
+    is_recreational
+    is_storefront
+    latitude
+    license_number
+    license_state
+    license_type
+    longitude
+    likes
+    monday
+    name
+    phone_number
+    shopid
+    saturday
+    review_count
+    region
+    rating
+    ranking
+    postal_code
+    state
+    wmid
+    wednesday
+    website
+    url
+    tuesday
+    thursday
+    sunday
+    text
+  }
+}
+`;
+
+const getDispensarySearch = `query MyQuery($latitude:Float!,$longitude:Float!,$range:Int!,$search:String!) {
+  getDispensarySearch(latitude: $latitude, longitude: $longitude, range: $range,search:$search) {
+    shopid
+    longitude
+    latitude
+    address
+    best_of_weedmaps
+    city
+    delivery_fees
+    delivery_minimum_order
+    description
+    dispensary_hash
+    email
+    friday
+    has_pickup
+    has_testing
+    id
+    image
+    image_name
+    intro_body
+    is_delivery
+    is_recreational
+    is_storefront
+    license_number
+    license_state
+    license_type
+    likes
+    monday
+    name
+    phone_number
+    postal_code
+    ranking
+    wmid
+    wednesday
+    website
+    url
+    tuesday
+    thursday
+    text
+    sunday
+    state
+    saturday
+    review_count
+    region
+    rating
+  }
+}
+`;
+
+const likeDislikeDocotor = `query MyQuery ($shopid:Int!,$option:String!) {
+  likedislikeDoctor(shopid: $shopid, option: $option) {
+    data
+  }
+}`;
+
+const likedislikeDispensary = `query MyQuery ($shopid:Int!,$option:String!) {
+  likedislikeDispensary(shopid: $shopid, option: $option) {
+    data
+  }
+}`;
+
+const likedislikeDelivery = `query MyQuery($shopid:Int!,$option:String!) {
+  likedislikeDelivery(shopid: $shopid, option: $option) {
+    data
+  }
+}`;
+
+const getDispensaryByRedius = `query getDispensaryByRadius($latitude:Float!,$longitude:Float!,$range:Int!,$radius:Float!){
+  getDispensaryByRadius(latitude: $latitude, longitude: $longitude, range: $range, radius:$radius) {
+    distance
+    shopid
+    longitude
+    latitude
+    address
+    best_of_weedmaps
+    city
+    delivery_fees
+    delivery_minimum_order
+    description
+    dispensary_hash
+    email
+    friday
+    has_pickup
+    has_testing
+    id
+    image
+    image_name
+    intro_body
+    is_delivery
+    is_recreational
+    is_storefront
+    license_number
+    license_state
+    license_type
+    likes
+    monday
+    name
+    phone_number
+    postal_code
+    ranking
+    wmid
+    wednesday
+    website
+    url
+    tuesday
+    thursday
+    text
+    sunday
+    state
+    saturday
+    review_count
+    region
+    rating
+  }
+}
+`;
+
+const getDeliveryByRadius = `query MyQuery($latitude:Float!,$longitude:Float!,$range:Int!,$radius:Float!) {
+  getDeliveryByRadius(latitude: $latitude, longitude: $longitude, range: $range, radius: $radius) {
+    distance
+    shopid
+    longitude
+    latitude
+    address
+    best_of_weedmaps
+    city
+    delivery_fees
+    delivery_minimum_order
+    description
+    dispensary_hash
+    email
+    friday
+    has_pickup
+    has_testing
+    id
+    image
+    image_name
+    intro_body
+    is_delivery
+    is_recreational
+    is_storefront
+    license_number
+    license_state
+    license_type
+    likes
+    monday
+    name
+    phone_number
+    postal_code
+    ranking
+    wmid
+    wednesday
+    website
+    url
+    tuesday
+    thursday
+    text
+    sunday
+    state
+    saturday
+    review_count
+    region
+    rating
+  }
+}`;
+
+const getDoctorByRadius = `query MyQuery($latitude:Float!,$longitude:Float!,$range:Int!,$radius:Float!) {
+  getDoctorByRadius(latitude:$latitude, longitude: $longitude, range: $range, radius: $radius) {
+    distance
+    shopid
+    longitude
+    latitude
+    address
+    best_of_weedmaps
+    city
+    delivery_fees
+    delivery_minimum_order
+    description
+    dispensary_hash
+    email
+    friday
+    has_pickup
+    has_testing
+    id
+    image
+    image_name
+    intro_body
+    is_delivery
+    is_recreational
+    is_storefront
+    license_number
+    license_state
+    license_type
+    likes
+    monday
+    name
+    phone_number
+    postal_code
+    ranking
+    wmid
+    wednesday
+    website
+    url
+    tuesday
+    thursday
+    text
+    sunday
+    state
+    saturday
+    review_count
+    region
+    rating
+  }
+}`;
+
+const getSingleRecord = `query MyQuery($shopid: Int!) {
+  getDoctorSingleRecoed(shopid: $shopid) {
+    id
+    address
+    best_of_weedmaps
+    city
+    has_testing
+    has_pickup
+    friday
+    email
+    distance
+    dispensary_hash
+    description
+    delivery_minimum_order
+    delivery_fees
+    image
+    image_name
+    intro_body
+    is_delivery
+    is_recreational
+    is_storefront
+    latitude
+    license_number
+    license_state
+    license_type
+    likes
+    longitude
+    monday
+    name
+    phone_number
+    postal_code
+    ranking
+    rating
+    region
+    review_count
+    saturday
+    shopid
+    state
+    sunday
+    text
+    thursday
+    url
+    tuesday
+    website
+    wednesday
+    wmid
+  }
+}
+
+`;
+
+export const Query = {
+  getDoctorData,
+  getDispensary,
+  getDiliveries,
+  getDeliverySearch,
+  getDoctorSearch,
+  getDispensarySearch,
+  likeDislikeDocotor,
+  likedislikeDispensary,
+  likedislikeDelivery,
+  getDeliveryByRadius,
+  getDispensaryByRedius,
+  getDoctorByRadius,
+  getSingleRecord,
+};

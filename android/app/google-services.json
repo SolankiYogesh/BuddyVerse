@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "47556376423",
+    "project_id": "pc-api-7408029310579408796-93",
+    "storage_bucket": "pc-api-7408029310579408796-93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47556376423:android:5dbcf2040a2815837ae1c2",
+        "android_client_info": {
+          "package_name": "com.greenlync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47556376423-lmpsuq8ap4vhdvegrfpkfsumf225fj9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqZGtJEWgPKliCUaa5t6B4epijPDGtwHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47556376423-lmpsuq8ap4vhdvegrfpkfsumf225fj9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

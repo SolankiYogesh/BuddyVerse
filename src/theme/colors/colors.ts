@@ -1,0 +1,110 @@
+const colors = {
+  white: '#ffffff',
+  snowWhite: '#F6F6F6',
+  transparent: 'transparent',
+
+  SeparatorColor: '#D7DBDD',
+
+  black: '#000000',
+  blackShade1B: '#1B2631',
+  blackShade02: '#02091F',
+  blackShade20: '#202733',
+
+  grayShadef4: '#f4f3f4',
+  grayShadeD6: '#D6DBDF',
+  grayShadeAE: '#AEB6BF',
+  grayShadeAB: '#ABB2B9',
+  grayShadeE9: '#E9E9EB',
+  grayShadeE6: '#E6E6E9',
+  grayShade8F: '#8F9399',
+  grayShadeBD: '#BDBDBD',
+  grayShadeCC: '#CCCED2',
+  grayShade80: '#80848F',
+  grayShadeC8: '#C8C8C8',
+  grayShadeEx: '#E6E6E9',
+  grayShadeR1: '#3c5953',
+  black1F: '#02091F',
+  grayShadeBorder: '#E6E6E9',
+
+  red: 'red',
+  redShadeC0: '#C0392B',
+  redShadeC3: '#C3270B',
+  redShadeD9: '#D98880',
+  redShadeE3: '#E31836',
+  redShadeDF: '#DF495B',
+  redShadeED: '#ED213A',
+  redShade93: '#93291E',
+
+  blueShade1A: '#1A5276',
+  blueShade54: '#5499C7',
+  blueShade2E: '#2E4053',
+  blueShadeAF: '#AFC6DE',
+  blueShadeAE: '#AED6F1',
+  blueShadeD3: '#D3EDFC',
+  blueShadeF8: '#F8F9FD',
+  blueShade00: '#006490',
+  blueShadeD4: '#D4EFE2',
+  blueShade25: '#25D4C9',
+  blueShade02: '#0266e3',
+  blueShade13: '#13153b',
+  orangeShadeFF: '#FFDDAE',
+
+  greenShade5E: '#5EC425',
+  greenShade5F: '#5FC740',
+  greenShade60: '#60C73F',
+  greenShade2A: '#2AB06F',
+  greenShade7D: '#7DD425',
+  greenShade94: '#94D7B7',
+  greenShade7E: '#7ECD2A',
+  greenShade59: '#05914c',
+
+  yellowShadeF4: '#F4ECAF',
+  yellowShadeFFC: '#FFC833',
+  yellowShadeFFF: '#FFF9D4',
+  yellowShadeF3: '#F3EBBC',
+  yellowShadeB1: '#B19D32',
+  yellowShadeB2: '#B2A353',
+
+  silverShadeCE: '#CECEE2',
+  silverShadeEE: '#EEEEFE',
+  silverShadeDB: '#DBDBEF',
+  silverShade94: '#9496B5',
+  silverShade6F: '#6F7283',
+
+  bronzeShadeEB: '#EBD08F',
+  bronzeShadeFD: '#FDDFAE',
+  bronzeShadeE7: '#E7C595',
+  bronzeShadeA3: '#A37247',
+  bronzeShade9A: '#9A7B51',
+  orange: '#FF7425',
+  vipColor: '#fab001',
+
+  blueShadeR1: '#2fb7a0',
+};
+export const colorData = [
+  [
+    colors.yellowShadeF4,
+    colors.yellowShadeFFF,
+    colors.yellowShadeF3,
+    colors.yellowShadeB1,
+  ],
+  [
+    colors.silverShadeCE,
+    colors.silverShadeEE,
+    colors.silverShadeDB,
+    colors.silverShade94,
+  ],
+  [
+    colors.bronzeShadeEB,
+    colors.bronzeShadeFD,
+    colors.bronzeShadeE7,
+    colors.bronzeShadeA3,
+  ],
+];
+export const numberColors = [
+  colors.yellowShadeB2,
+  colors.silverShade6F,
+  colors.bronzeShade9A,
+];
+
+export default colors;

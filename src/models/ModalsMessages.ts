@@ -1,0 +1,65 @@
+const ModalsMassages = {
+  passwordReset: 'Password changed',
+  plzFillAllFields: 'Please fill all fields',
+  paaswordDontMoath: 'Passwords don’t match. Please try again.',
+  enterValidEmail: 'Enter valid email address',
+  passwordShouldBe: 'Password must be at least 6 characters in length. ',
+  promoCode: 'Promo Code is no longer valid ',
+  promoCOdeClaimed: 'Promo Code successfully redeemed ',
+  codeWassSucee: 'Verification code sent, please check your email.',
+  wrongCOnfirmation: 'wrong confirmation code',
+  somethingWentWrong: 'Something went wrong, try again later',
+  enterVarification: 'Enter Verification Code',
+  weCouldNotFoundEmail:
+    'We couldn’t find that account. Please try with a different email address.',
+  pleaseEnterBothPassword: 'Please enter password in both fields.',
+  PleaseEnterVarification: 'Please enter verification code',
+  attemptLimitExceeded: 'Attempt Limit Exceeded, Try Again after Some time',
+  InvalidVerificationCode:
+    'Invalid verification code, please check your email and try again.',
+  codeResent: 'Code resent, please check your inbox or spam folder.',
+  areYouSureWantToReport: 'Are you sure you want to report this post?',
+  areYouSureWantToBlock: 'Are you sure you want to block this user?',
+  offensiveWord: 'POTENTIALLY OFFENSIVE LANGUAGE! CANNOT BE POSTED',
+  thisFeatureRequired:
+    'This feature requires access to your camera and photos so you can post',
+  groupCreated: 'Group Created',
+  doYouWantToleaveGroup: 'Do you want to leave the group?',
+  areYouSureWant: 'Are you sure you want to delete this group?',
+  reportComment: 'Are you sure you want to report this comment?',
+  youPassedJoint: 'You puff puff passed a Joint',
+  videoMustBe: 'Video must be 15 seconds or less',
+  youVideoIs:
+    'Your video is uploading and will post as soon as it’s processed.',
+  profileUpdate: 'Profile Updated',
+  pleaseTryANother: 'Please Try Another Image',
+  somethingWentWrongPlease: 'Something went wrong, please try again later',
+  nameofUsername: 'Name and username fields require a minimum of 3 characters.',
+  areYouSure: 'Are you sure? All of your data will be permanently deleted.',
+  thisFeatureRequiredLocation: `Please turn on your location setting to use this feature. You'll able to access nearby deals, discount, special offers & more!`,
+  ifyouchangeYorMind: 'If you change your mind, you’ll have to request',
+  again: 'again.',
+  Select_Image: 'Select Image',
+  clearAllNotifications: 'Are you sure you want to clear all Notifications ?',
+  imDataPopUp: 'Please select at least 3 passionate',
+  MyPasssionDataPop: 'Please select at least 3 passions',
+  emptyFileds: 'Please complete the required fields *',
+};
+const ModalsTitles = {
+  announceModal: 'ANNOUNCEMENT',
+  oops: 'Oops!',
+  failed: 'Failed',
+  success: 'Success',
+  Report: 'Report',
+  Block: 'Block',
+  somethingWentWrong: 'Something Went Wrong',
+  locationpermition: 'Location Permissions Required !',
+  Fill_Profile_info: 'Fill Profile info',
+  Unfollow: 'Unfollow',
+};
+
+const ModalsMessages = {
+  ModalsMassages,
+  ModalsTitles,
+};
+export default ModalsMessages;

@@ -1,0 +1,26 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-greenlyncapp-staging-182854-authRole",
+      "UnauthRoleArn": "arn:aws:iam::004920813224:role/amplify-greenlyncapp-staging-182854-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::004920813224:role/amplify-greenlyncapp-staging-182854-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-greenlyncapp-staging-182854-deployment",
+      "UnauthRoleName": "amplify-greenlyncapp-staging-182854-unauthRole",
+      "StackName": "amplify-greenlyncapp-staging-182854",
+      "StackId": "arn:aws:cloudformation:us-east-1:004920813224:stack/amplify-greenlyncapp-staging-182854/672d1860-bf45-11ec-9188-12c29775307d",
+      "AmplifyAppId": "d32xcf2lh8tcpy"
+    },
+    "categories": {
+      "auth": {
+        "greenlyncapp76e34f78": {}
+      },
+      "storage": {
+        "greenlyncapp028fb6c2": {
+          "bucketName": "on-the-fly-video-convert-greenlync-src-004920813224",
+          "region": "us-east-1"
+        }
+      }
+    }
+  }
+}

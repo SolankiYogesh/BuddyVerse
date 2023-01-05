@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Greenlync</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">tlb0wCI8h8R6izXFe4drW-MHZazio6zyI22b0</string>
+</resources>
